@@ -3,13 +3,13 @@
 var arr = [1,2,3,4];
 var letters = ["a", "b", "c", "d", "e"];
 
-function steph(array){
+function printReverse(array){
 for (var i = array.length - 1; i >= 0; i--) {
 		console.log(array[i]);
 	};	
 }
 
-steph(arr);
+printReverse(arr);
 
 
 //elements are uniform
@@ -17,7 +17,7 @@ steph(arr);
 var arr2 = [1,1,1,1];
 var arr3 = [1,1,1,2];
 
-function stouf(array){
+function uniform(array){
 for (var i = array.length - 1; i >= 0; i--) {
 	if (array[i] !== array[0]){
 		return false;
@@ -55,11 +55,33 @@ add += test;
 
 // Max function
 
-arr6 = [1,2,3,4,5];
+arr6 = [1,29,3,-4,5];
 
 function max(array){
+	var max= array[0];
+	array.forEach(function(test){
+		if (array[test]>max){
+			max = array[test];
+		}
+
+	}
+
+
+		)
+	return max;
 	
-	
+}
+
+arr6 = [1,29,3,-4,5];
+
+function max(array){
+	var max= array[0];
+	for (i=1; i<array.length; i++){
+		if (array[i]>max){
+			max=array[i];
+		}
+	}
+	return max;
 }
 
 
